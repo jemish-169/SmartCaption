@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SmartCaption</string>
+    <string name="home_screen_desc">Smart AI Captions for your\nPhotos</string>
+    <string name="get_started">✨ Get Started</string>
+    <string name="close_icon">Close Icon</string>
+    <string name="upload_a_photo">Upload a Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="upload_a_photo_from_device">Upload a photo to generate a caption</string>
+    <string name="lets_analyze_image_desc">"Give Image to SmartCaption for Analyze "</string>
+    <string name="next_generate_caption">Next: Generate Caption</string>
+    <string name="caption">Caption</string>
+    <string name="re_generate">Regenerate</string>
+    <string name="saved_caption">Saved Captions</string>
+    <string name="back_icon">Back Icon</string>
+    <string name="copy_caption">Copy caption</string>
+    <string name="home_screen_image">Home screen image</string>
+    <string name="delete_caption">Delete caption</string>
+    <string name="see_all">See All</string>
 </resources>

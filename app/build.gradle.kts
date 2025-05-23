@@ -88,6 +88,7 @@ dependencies {
     implementation(libs.compose.material.icons.extended)
     implementation(libs.androidx.compose.material3.adaptive.navigation)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.material3.windowsizeclass)
 
     // Compose - Integration with ViewModels
     implementation(libs.androidx.lifecycle.viewmodel.compose)
@@ -134,9 +135,6 @@ dependencies {
     implementation(libs.coil3.coil.compose)
     implementation(libs.coil.network.okhttp)
 
-    // data store
-    implementation(libs.androidx.datastore.preferences)
-    implementation(libs.androidx.datastore.core)
 
     // benchmark
     implementation(libs.androidx.profileinstaller)

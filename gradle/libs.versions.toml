@@ -13,7 +13,6 @@ roomKtx = "2.7.1"
 hilt = "2.55"
 androidGradlePlugin = "8.7.3"
 kspVersion = "2.1.0-1.0.29"
-datastorePreferences = "1.1.7"
 coilCompose = "2.6.0"
 coreSplashscreen = "1.0.1"
 coilComposeVersion = "3.0.4"
@@ -24,16 +23,15 @@ androidxLifecycle = "2.9.0"
 androidxTestRules = "1.6.1"
 truth = "1.4.4"
 androidxTestUiautomator = "2.3.0"
-kotlinxSerializationJson = "1.7.3"
+kotlinxSerializationJson = "1.8.1"
 navigationCompose = "2.9.0"
 androidxProfileinstaller = "1.4.1"
 kotlinxCoroutinesPlayServices = "1.9.0"
 material3-adaptive = "1.1.0"
 
 [libraries]
-androidx-datastore-core = { module = "androidx.datastore:datastore-core", version.ref = "datastorePreferences" }
-androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
 androidx-material3-android = { module = "androidx.compose.material3:material3-android", version.ref = "material3Android" }
+androidx-material3-windowsizeclass = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "material3Android" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
