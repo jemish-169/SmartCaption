@@ -74,6 +74,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.play.services)
+    implementation(libs.kotlinx.coroutines.guava)
 
     // compose
     implementation(platform(libs.androidx.compose.bom))
@@ -135,7 +136,9 @@ dependencies {
     implementation(libs.coil3.coil.compose)
     implementation(libs.coil.network.okhttp)
 
-
     // benchmark
     implementation(libs.androidx.profileinstaller)
+
+    // ml kit for getting image desc
+    implementation(libs.genai.image.description)
 }

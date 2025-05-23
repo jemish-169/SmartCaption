@@ -13,7 +13,7 @@ sealed class RootRoute {
     data object UploadScreen : RootRoute()
 
     @Serializable
-    data object CaptionScreen : RootRoute()
+    data class CaptionScreen(val imgUri: String) : RootRoute()
 
     @Serializable
     data object HistoryScreen : RootRoute()
