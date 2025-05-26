@@ -1,8 +1,8 @@
 package com.app.smartcaption.di
 
 import android.content.Context
-import com.app.smartcaption.core.domain.ImageDescriptionRepository
-import com.app.smartcaption.core.data.ImageDescriptionRepositoryImpl
+import com.app.smartcaption.core.domain.ImageDescRepository
+import com.app.smartcaption.core.data.ImageDescRepositoryImpl
 import com.google.mlkit.genai.imagedescription.ImageDescriber
 import dagger.Module
 import dagger.Provides
@@ -20,7 +20,7 @@ class RepositoryModule {
     fun provideImageDescriptionRepository(
         imageDescriber: ImageDescriber,
         @ApplicationContext context: Context
-    ): ImageDescriptionRepository =
-        ImageDescriptionRepositoryImpl(imageDescriber, context)
+    ): ImageDescRepository =
+        ImageDescRepositoryImpl(imageDescriber, context)
 
 }

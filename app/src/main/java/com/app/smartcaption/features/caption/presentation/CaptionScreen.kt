@@ -30,12 +30,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import androidx.hilt.navigation.compose.hiltViewModel
+import coil.compose.rememberAsyncImagePainter
 import com.app.smartcaption.R
 import com.app.smartcaption.common.presentation.HeaderBackIcon
 import com.app.smartcaption.core.presentation.viewmodel.ImageDescViewModel
@@ -74,8 +74,8 @@ fun CaptionScreen(
         Spacer(modifier = Modifier.height(12.dp))
 
         Image(
-            painter = painterResource(R.drawable.home_screen_img),
-            contentDescription = stringResource(R.string.home_screen_image),
+            painter = rememberAsyncImagePainter(model = imgUri),
+            contentDescription = stringResource(R.string.selected_img),
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .height(300.dp)
@@ -123,7 +123,7 @@ fun CaptionScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 4.dp),
-            onClick = {imageDescViewModel.getImageDescription(imgUri)},
+            onClick = { imageDescViewModel.getImageDescription(imgUri) },
             content = {
                 Text(
                     text = stringResource(R.string.re_generate),

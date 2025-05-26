@@ -16,4 +16,5 @@
     <string name="home_screen_image">Home screen image</string>
     <string name="delete_caption">Delete caption</string>
     <string name="see_all">See All</string>
+    <string name="selected_img">SElected Image</string>
 </resources>

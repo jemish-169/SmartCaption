@@ -4,7 +4,7 @@ import android.graphics.Bitmap
 import android.net.Uri
 import kotlinx.coroutines.flow.Flow
 
-interface ImageDescriptionRepository {
+interface ImageDescRepository {
     fun onClose()
     fun describeImage(bitmap: Bitmap): Flow<String>
     suspend fun saveImage(uri: Uri): Result<Bitmap>

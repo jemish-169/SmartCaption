@@ -3,7 +3,7 @@ package com.app.smartcaption.core.presentation.viewmodel
 import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.app.smartcaption.core.domain.ImageDescriptionRepository
+import com.app.smartcaption.core.domain.ImageDescRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ImageDescViewModel @Inject constructor(
-    private val imgDescRepository: ImageDescriptionRepository
+    private val imgDescRepository: ImageDescRepository
 ) : ViewModel() {
 
     private val _messageFlow = MutableStateFlow("")

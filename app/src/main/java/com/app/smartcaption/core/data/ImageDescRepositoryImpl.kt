@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
-import com.app.smartcaption.core.domain.ImageDescriptionRepository
+import com.app.smartcaption.core.domain.ImageDescRepository
 import com.google.mlkit.genai.common.DownloadCallback
 import com.google.mlkit.genai.common.FeatureStatus
 import com.google.mlkit.genai.common.GenAiException
@@ -23,10 +23,10 @@ import java.io.File
 import java.io.FileOutputStream
 import javax.inject.Inject
 
-class ImageDescriptionRepositoryImpl @Inject constructor(
+class ImageDescRepositoryImpl @Inject constructor(
     private val imageDescriber: ImageDescriber,
     @ApplicationContext private val context: Context
-) : ImageDescriptionRepository {
+) : ImageDescRepository {
 
     override fun describeImage(bitmap: Bitmap): Flow<String> = callbackFlow {
         val request = ImageDescriptionRequest.builder(bitmap).build()
